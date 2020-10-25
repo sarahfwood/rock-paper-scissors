@@ -14,7 +14,7 @@ const getUserChoice = (userInput) => {
 
 
 function getComputerChoice() {
-  let choice = Math.floor(Math.random() * 3);
+  const choice = Math.floor(Math.random() * 3);
   if (choice === 0) {
     return 'rock';
   } else if (choice === 1) {
@@ -51,7 +51,7 @@ function determineWinner(userChoice, computerChoice) {
 
 
 function playGame() {
-  let userChoice = getUserChoice();
+  const userChoice = getUserChoice();
   let computerChoice = getComputerChoice();
 }
 
