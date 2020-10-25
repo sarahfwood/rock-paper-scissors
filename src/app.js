@@ -7,9 +7,9 @@ const getUserChoice = (userInput) => {
   } else if (userInput === 'scissors') {
     return 'scissors';
   } else {
-    return 'Input Error - please choose from rock, paper or scissors.'
+    return 'Input Error - please choose from rock, paper or scissors.';
   }
-}
+};
 
 
 
@@ -30,9 +30,9 @@ function determineWinner(userChoice, computerChoice) {
   }
 
   if (userChoice === 'rock' && computerChoice === 'paper') {
-    return 'Computer wins!'
+    return 'Computer wins!';
   } else {
-    return 'You won!'
+    return 'You won!';
   }
 
   if (userChoice === 'paper' && computerChoice === 'scissors') {
