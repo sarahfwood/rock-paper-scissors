@@ -11,3 +11,19 @@ body {
   padding: 5px;
   text-transform: uppercase;
 }
+
+#play-image {
+  height: 50px;
+}
+
+#rock {
+height: 50px;
+}
+
+#paper {
+  height: 50px;
+}
+
+#scissors {
+  height: 50px;
+}
