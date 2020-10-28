@@ -3,6 +3,10 @@ body {
   font-family: 'Permanent Marker', cursive;
 }
 
+.main-header {
+  font-size: 100px;
+}
+
 #instructions {
   border: 1px solid #ccc;
   display: none;
@@ -21,12 +25,10 @@ body {
 }
 
 #play-image {
-  height: 100px;
+  height: 75px;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
-
 }
 
 #rock {
