@@ -21,6 +21,11 @@ body {
 
 #play-image {
   height: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+
 }
 
 #rock {
