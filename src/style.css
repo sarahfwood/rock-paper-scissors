@@ -34,17 +34,19 @@ body {
 }
 
 #rock-image {
-  height: 20px;
+  height: 300px;
 }
 
-#paper {
-  
+#paper-image {
+  height: 350px;
 }
 
-#scissors {
-  
+#scissors-image {
+  height: 400px;
+  transform: rotate(90deg);
+  margin: 70px;
 }
 
-.choice {
-
+.resetBtn {
+  text-align: center;
 }
