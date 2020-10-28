@@ -5,6 +5,8 @@ body {
 
 .main-header {
   font-size: 100px;
+  text-align: center;
+  margin: 10px;
 }
 
 #instructions {
