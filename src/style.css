@@ -33,7 +33,8 @@ body {
   margin-right: auto;
 }
 
-#rock {
+#rock-image {
+  height: 20px;
 }
 
 #paper {
@@ -45,5 +46,5 @@ body {
 }
 
 .choice {
-  height: 50px;
+
 }
