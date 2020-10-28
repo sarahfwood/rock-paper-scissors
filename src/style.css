@@ -12,8 +12,15 @@ body {
   text-transform: uppercase;
 }
 
+#play:hover #instructions {
+  display: block;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+  border: 0px;
+}
+
 #play-image {
-  height: 50px;
+  height: 100px;
 }
 
 #rock {
@@ -25,4 +32,8 @@ body {
 
 #scissors {
   
+}
+
+.choice {
+  height: 50px;
 }
