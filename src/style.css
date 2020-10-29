@@ -18,6 +18,11 @@ body {
   text-transform: uppercase;
 }
 
+p {
+  text-align: center;
+  margin: 0px;
+}
+
 #play:hover #instructions {
   display: block;
   font-family: 'Courier New', Courier, monospace;
@@ -25,6 +30,7 @@ body {
   border: 0px;
   text-align: center;
 }
+
 
 #play-image {
   height: 75px;
@@ -39,15 +45,23 @@ body {
 
 #paper-image {
   height: 350px;
+  
 }
 
 #scissors-image {
   height: 400px;
   transform: rotate(90deg);
-  margin: 70px;
 }
 
 .resetBtn {
   text-align: center;
 }
 
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
