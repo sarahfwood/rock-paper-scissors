@@ -1,3 +1,12 @@
+document.querySelectorAll('.choice').forEach(item => {
+  item.addEventListener('click', event => {
+    console.log('clicked!');
+  });
+});
+
+
+
+
 
 const getUserChoice = (userInput) => {
   userInput = userInput.toLowerCase();
