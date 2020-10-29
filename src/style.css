@@ -41,6 +41,7 @@ p {
 
 #rock-image {
   height: 300px;
+  transform: rotate(90deg);
 }
 
 #paper-image {
@@ -50,7 +51,7 @@ p {
 
 #scissors-image {
   height: 400px;
-  transform: rotate(90deg);
+  transform: rotate(270deg);
 }
 
 .resetBtn {
