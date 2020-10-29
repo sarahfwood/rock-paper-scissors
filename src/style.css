@@ -44,6 +44,12 @@ p {
   transform: rotate(90deg);
 }
 
+#rock.choice{
+  text-align: right;
+  margin-right: 80px;
+  margin-top: 40px;
+}
+
 #paper-image {
   height: 350px;
   
