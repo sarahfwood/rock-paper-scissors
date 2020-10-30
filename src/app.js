@@ -4,6 +4,11 @@ document.querySelectorAll('.choice').forEach(item => {
   });
 });
 
+document.getElementById('reset').addEventListener('click', resetButton);
+
+function resetButton() {
+  console.log('reset button clicked');
+}
 
 
 
