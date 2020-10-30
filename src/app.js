@@ -1,13 +1,16 @@
 document.querySelectorAll('.choice').forEach(item => {
   item.addEventListener('click', event => {
-    console.log('clicked!');
+    
+    const playerChoice = item.value;
+    alert('Clicked');
   });
 });
+
 
 document.getElementById('reset').addEventListener('click', resetButton);
 
 function resetButton() {
-  console.log('reset button clicked');
+  alert('reset button clicked');
 }
 
 
