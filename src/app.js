@@ -2,6 +2,10 @@ document.querySelectorAll('.choice').forEach(item => {
   item.addEventListener('click', event => {
     
     const playerChoice = item.value;
+
+    if(value === 'rockChoice') {
+      alert('You clicked rock');
+    }
     alert('Clicked');
   });
 });
