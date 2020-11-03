@@ -3,7 +3,7 @@ document.querySelectorAll('.choice').forEach(item => {
     
     const playerChoice = item.value;
 
-    if(value === 'rockChoice') {
+    if(value === document.getElementById('rock')) {
       alert('You clicked rock');
     }
     alert('Clicked');
