@@ -5,8 +5,13 @@ document.querySelectorAll('.choice').forEach(item => {
 
     if(item === document.getElementById('rock')) {
       alert('You clicked rock');
+    } else if (item === document.getElementById('paper')) {
+      alert('You clicked paper');
+    } else if (item === document.getElementById('scissors')) {
+      alert('You clicked scissors');
+    } else {
+      alert('Clicked');
     }
-    alert('Clicked');
   });
 });
 
