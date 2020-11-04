@@ -14,7 +14,7 @@ document.querySelectorAll('.choice').forEach(item => {
       'return scissors';
     } else {
       alert('Clicked');
-      return 'Invalid';
+      return 'Input Error - please choose from rock, paper or scissors.';
     }
   });
 });
