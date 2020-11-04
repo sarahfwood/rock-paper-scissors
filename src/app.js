@@ -30,27 +30,26 @@ function getComputerChoice() {
   }
 }
 
-const userChoice = playerChoice;
 const computerChoice = getComputerChoice();
 
 function determineWinner(playerChoice, computerChoice) {
-  if (userChoice === computerChoice) {
+  if (playerChoice === computerChoice) {
     return 'It\'s a tie!';
   }
 
-  if (userChoice === 'rock' && computerChoice === 'paper') {
+  if (playerChoice === 'rock' && computerChoice === 'paper') {
     return 'Computer wins!';
   } else {
     return 'You won!';
   }
 
-  if (userChoice === 'paper' && computerChoice === 'scissors') {
+  if (playerChoice === 'paper' && computerChoice === 'scissors') {
     return 'Computer wins!'
   } else {
     return 'You won!'
   }
 
-  if (userChoice === 'scissors' && computerChoice === 'rock') {
+  if (playerChoice === 'scissors' && computerChoice === 'rock') {
     return 'Computer wins!'
   } else {
     return 'You won!'
