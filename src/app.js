@@ -4,6 +4,7 @@ document.querySelectorAll('.choice').forEach(item => {
     const playerChoice = item.value;
 
     if (item === document.getElementById('rock')) {
+      document.getElementById('choiceDisplay') = 'You chose Rock';
       alert('You clicked rock');
       return 'rock';
     } else if (item === document.getElementById('paper')) {
