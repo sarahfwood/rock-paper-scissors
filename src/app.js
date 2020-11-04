@@ -3,14 +3,18 @@ document.querySelectorAll('.choice').forEach(item => {
     
     const playerChoice = item.value;
 
-    if(item === document.getElementById('rock')) {
+    if (item === document.getElementById('rock')) {
       alert('You clicked rock');
+      return 'rock';
     } else if (item === document.getElementById('paper')) {
       alert('You clicked paper');
+      return 'paper';
     } else if (item === document.getElementById('scissors')) {
       alert('You clicked scissors');
+      'return scissors';
     } else {
       alert('Clicked');
+      return 'Invalid';
     }
   });
 });
