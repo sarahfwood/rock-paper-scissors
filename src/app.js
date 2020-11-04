@@ -30,7 +30,10 @@ function getComputerChoice() {
   }
 }
 
-function determineWinner(userChoice, computerChoice) {
+const userChoice = playerChoice;
+const computerChoice = getComputerChoice();
+
+function determineWinner(playerChoice, computerChoice) {
   if (userChoice === computerChoice) {
     return 'It\'s a tie!';
   }
@@ -61,7 +64,7 @@ function playGame() {
   let computerChoice = getComputerChoice();
 }
 
-console.log(determineWinner(getUserChoice('scissors'), getComputerChoice()));
+console.log(determineWinner(playerChoice('scissors'), getComputerChoice()));
 
 
 document.getElementById('reset').addEventListener('click', resetButton);
