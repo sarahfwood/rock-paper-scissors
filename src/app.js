@@ -19,31 +19,6 @@ document.querySelectorAll('.choice').forEach(item => {
   });
 });
 
-
-document.getElementById('reset').addEventListener('click', resetButton);
-
-function resetButton() {
-  alert('reset button clicked');
-}
-
-
-
-
-const getUserChoice = (userInput) => {
-  userInput = userInput.toLowerCase();
-  if (userInput === 'rock') {
-    return 'rock';
-  } else if (userInput === 'paper') {
-    return 'paper';
-  } else if (userInput === 'scissors') {
-    return 'scissors';
-  } else {
-    return 'Input Error - please choose from rock, paper or scissors.';
-  }
-};
-
-
-
 function getComputerChoice() {
   const choice = Math.floor(Math.random() * 3);
   if (choice === 0) {
@@ -87,3 +62,26 @@ function playGame() {
 }
 
 console.log(determineWinner(getUserChoice('scissors'), getComputerChoice()));
+
+
+document.getElementById('reset').addEventListener('click', resetButton);
+
+function resetButton() {
+  alert('reset button clicked');
+}
+
+
+
+
+// const getUserChoice = (userInput) => {
+//   userInput = userInput.toLowerCase();
+//   if (userInput === 'rock') {
+//     return 'rock';
+//   } else if (userInput === 'paper') {
+//     return 'paper';
+//   } else if (userInput === 'scissors') {
+//     return 'scissors';
+//   } else {
+//     return 'Input Error - please choose from rock, paper or scissors.';
+//   }
+// };
