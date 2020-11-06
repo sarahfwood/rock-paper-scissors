@@ -1,5 +1,7 @@
 const playerChoice;
 
+function playerChoiceFunction(playerChoice) {
+
 
 document.querySelectorAll('.choice').forEach(item => {
   item.addEventListener('click', event => {
@@ -21,6 +23,7 @@ document.querySelectorAll('.choice').forEach(item => {
     }
   });
 });
+}
 
 function getComputerChoice() {
   const choice = Math.floor(Math.random() * 3);
