@@ -1,15 +1,18 @@
+const playerChoice;
+
+
 document.querySelectorAll('.choice').forEach(item => {
   item.addEventListener('click', event => {
     
-    const playerChoice = item.value;
+    // const playerChoice = item.value;
 
-    if (item === document.getElementById('rock')) {
+    if (playerChoice === document.getElementById('rock')) {
       alert('You clicked rock');
       return 'rock';
-    } else if (item === document.getElementById('paper')) {
+    } else if (itplayerChoiceem === document.getElementById('paper')) {
       alert('You clicked paper');
       return 'paper';
-    } else if (item === document.getElementById('scissors')) {
+    } else if (itplayerChoiceem === document.getElementById('scissors')) {
       alert('You clicked scissors');
       'return scissors';
     } else {
