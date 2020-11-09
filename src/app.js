@@ -11,10 +11,10 @@ document.querySelectorAll('.choice').forEach(item => {
     if (playerChoice === document.getElementById('rock')) {
       alert('You clicked rock');
       return 'rock';
-    } else if (itplayerChoiceem === document.getElementById('paper')) {
+    } else if (playerChoice === document.getElementById('paper')) {
       alert('You clicked paper');
       return 'paper';
-    } else if (itplayerChoiceem === document.getElementById('scissors')) {
+    } else if (playerChoice === document.getElementById('scissors')) {
       alert('You clicked scissors');
       'return scissors';
     } else {
@@ -24,6 +24,20 @@ document.querySelectorAll('.choice').forEach(item => {
   });
 });
 }
+
+// const getUserChoice = (userInput) => {
+//   userInput = userInput.toLowerCase();
+//   if (userInput === 'rock') {
+//     return 'rock';
+//   } else if (userInput === 'paper') {
+//     return 'paper';
+//   } else if (userInput === 'scissors') {
+//     return 'scissors';
+//   } else {
+//     return 'Input Error - please choose from rock, paper or scissors.';
+//   }
+// };
+
 
 function getComputerChoice() {
   const choice = Math.floor(Math.random() * 3);
@@ -81,15 +95,3 @@ function resetButton() {
 
 
 
-// const getUserChoice = (userInput) => {
-//   userInput = userInput.toLowerCase();
-//   if (userInput === 'rock') {
-//     return 'rock';
-//   } else if (userInput === 'paper') {
-//     return 'paper';
-//   } else if (userInput === 'scissors') {
-//     return 'scissors';
-//   } else {
-//     return 'Input Error - please choose from rock, paper or scissors.';
-//   }
-// };
