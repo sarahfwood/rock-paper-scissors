@@ -1,12 +1,7 @@
-const playerChoice;
-
-function playerChoiceFunction(playerChoice) {
-
-
 document.querySelectorAll('.choice').forEach(item => {
   item.addEventListener('click', event => {
-    
-    // const playerChoice = item.value;
+
+    const playerChoice = item.value;
 
     if (playerChoice === document.getElementById('rock')) {
       alert('You clicked rock');
@@ -23,7 +18,7 @@ document.querySelectorAll('.choice').forEach(item => {
     }
   });
 });
-}
+
 
 // const getUserChoice = (userInput) => {
 //   userInput = userInput.toLowerCase();
