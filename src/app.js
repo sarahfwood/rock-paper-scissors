@@ -17,11 +17,12 @@ document.querySelectorAll('.choice').forEach(item => {
       return 'Input Error - please choose from rock, paper or scissors.';
     }
   });
+  if (item.value === document.getElementById('rock')) {
+    document.getElementById('choiceDisplay').innerHTML = 'You chose Rock!!';
+  }
 });
 
-if (playerChoice === document.getElementById('rock')) {
-  document.getElementById('choiceDisplay').innerHTML = 'You chose Rock!!';
-}
+
 
 
 
