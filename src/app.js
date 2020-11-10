@@ -19,7 +19,10 @@ document.querySelectorAll('.choice').forEach(item => {
   });
 });
 
-document.getElementById('choiceDisplay').innerHTML = 'Chnage me!';
+if (playerChoice === document.getElementById('rock')) {
+  document.getElementById('choiceDisplay').innerHTML = 'You chose Rock!!';
+}
+
 
 
 
