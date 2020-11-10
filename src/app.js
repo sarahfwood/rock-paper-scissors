@@ -8,9 +8,11 @@ document.querySelectorAll('.choice').forEach(item => {
       alert('You clicked rock');
       return 'rock';
     } else if (item === document.getElementById('paper')) {
+      document.getElementById('choiceDisplay').innerHTML = 'You chose Paper!!';
       alert('You clicked paper');
       return 'paper';
     } else if (item === document.getElementById('scissors')) {
+      document.getElementById('choiceDisplay').innerHTML = 'You chose Scissors!!';
       alert('You clicked scissors');
       'return scissors';
     } else {
