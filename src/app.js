@@ -19,6 +19,9 @@ document.querySelectorAll('.choice').forEach(item => {
   });
 });
 
+document.getElementById('choiceDisplay').innerHTML = 'Chnage me!';
+
+
 
 // const getUserChoice = (userInput) => {
 //   userInput = userInput.toLowerCase();
