@@ -4,6 +4,7 @@ document.querySelectorAll('.choice').forEach(item => {
     const playerChoice = item.value;
 
     if (item === document.getElementById('rock')) {
+      document.getElementById('choiceDisplay').innerHTML = 'You chose Rock!!';
       alert('You clicked rock');
       return 'rock';
     } else if (item === document.getElementById('paper')) {
@@ -17,9 +18,6 @@ document.querySelectorAll('.choice').forEach(item => {
       return 'Input Error - please choose from rock, paper or scissors.';
     }
   });
-  if (item.value === document.getElementById('rock')) {
-    document.getElementById('choiceDisplay').innerHTML = 'You chose Rock!!';
-  }
 });
 
 
