@@ -54,6 +54,8 @@ function determineWinner(playerChoice, computerChoice) {
     document.getElementById('result').innerHTML = 'It\'s a tie';
   } else if (playerChoice === 'scissors' && computerChoice === 'paper') {
     document.getElementById('result').innerHTML = 'Scissors cut paper, you win!!';
+  } else if (playerChoice === 'rock' && computerChoice === 'scissors') {
+    document.getElementById('result').innerHTML = 'Rock crushes Scissors, you win!!';
   }
 }
 
