@@ -1,23 +1,28 @@
-document.querySelectorAll('.choice').forEach(item => {
-  item.addEventListener('click', event => {
-
-    const playerChoice = item.value;
-
-    if (item === document.getElementById('rock')) {
-      document.getElementById('choiceDisplay').innerHTML = 'You chose Rock!!';
-      return 'rock';
-    } else if (item === document.getElementById('paper')) {
-      document.getElementById('choiceDisplay').innerHTML = 'You chose Paper!!';
-      return 'paper';
-    } else if (item === document.getElementById('scissors')) {
-      document.getElementById('choiceDisplay').innerHTML = 'You chose Scissors!!';
-      'return scissors';
-    } else {
-      alert('Clicked');
-      return 'Input Error - please choose from rock, paper or scissors.';
-    }
+function getPlayerChoice() {
+  document.querySelectorAll('.choice').forEach(item => {
+    item.addEventListener('click', event => {
+  
+      const playerChoice = item.value;
+  
+      if (item === document.getElementById('rock')) {
+        document.getElementById('choiceDisplay').innerHTML = 'You chose Rock!!';
+        return 'rock';
+      } else if (item === document.getElementById('paper')) {
+        document.getElementById('choiceDisplay').innerHTML = 'You chose Paper!!';
+        return 'paper';
+      } else if (item === document.getElementById('scissors')) {
+        document.getElementById('choiceDisplay').innerHTML = 'You chose Scissors!!';
+        'return scissors';
+      } else {
+        alert('Clicked');
+        return 'Input Error - please choose from rock, paper or scissors.';
+      }
+    });
   });
-});
+}
+
+
+
 
 // const getUserChoice = (userInput) => {
 //   userInput = userInput.toLowerCase();
@@ -47,6 +52,7 @@ function getComputerChoice() {
 }
 
 const computerChoice = getComputerChoice();
+const 
 
 
 function determineWinner(playerChoice, computerChoice) {
