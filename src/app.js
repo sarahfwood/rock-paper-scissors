@@ -52,7 +52,7 @@ function getComputerChoice() {
 }
 
 const computerChoice = getComputerChoice();
-const 
+const playerChoice = getPlayerChoice();
 
 
 function determineWinner(playerChoice, computerChoice) {
@@ -76,7 +76,7 @@ function playGame() {
   let computerChoice = getComputerChoice();
 }
 
-console.log(determineWinner(playerChoice('scissors'), getComputerChoice()));
+// console.log(determineWinner(playerChoice('scissors'), getComputerChoice()));
 
 
 document.getElementById('reset').addEventListener('click', resetButton);
