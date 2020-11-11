@@ -22,11 +22,6 @@ document.querySelectorAll('.choice').forEach(item => {
   });
 });
 
-
-
-
-
-
 // const getUserChoice = (userInput) => {
 //   userInput = userInput.toLowerCase();
 //   if (userInput === 'rock') {
@@ -40,10 +35,10 @@ document.querySelectorAll('.choice').forEach(item => {
 //   }
 // };
 
-
 function getComputerChoice() {
   const choice = Math.floor(Math.random() * 3);
   if (choice === 0) {
+    document.getElementById('computerChoicedisplay').innerHTML = 'Computer chose Rock!!';
     return 'rock';
   } else if (choice === 1) {
     return 'paper';
@@ -53,6 +48,7 @@ function getComputerChoice() {
 }
 
 const computerChoice = getComputerChoice();
+
 
 function determineWinner(playerChoice, computerChoice) {
   if (playerChoice === computerChoice) {
