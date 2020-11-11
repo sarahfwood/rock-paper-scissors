@@ -52,6 +52,8 @@ const computerChoice = getComputerChoice();
 function determineWinner(playerChoice, computerChoice) {
   if (playerChoice === computerChoice) {
     document.getElementById('result').innerHTML = 'It\'s a tie';
+  } else if (playerChoice === 'scissors' && computerChoice === 'paper') {
+    document.getElementById('result').innerHTML = 'Scissors cut paper, you win!!';
   }
 }
 
