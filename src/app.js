@@ -41,6 +41,7 @@ function getComputerChoice() {
     document.getElementById('computerChoicedisplay').innerHTML = 'Computer chose Rock!!';
     return 'rock';
   } else if (choice === 1) {
+    document.getElementById('computerChoicedisplay').innerHTML = 'Computer chose Paper!!';
     return 'paper';
   } else {
     return 'scissors';
