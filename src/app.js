@@ -56,6 +56,10 @@ function determineWinner(playerChoice, computerChoice) {
     document.getElementById('result').innerHTML = 'Scissors cut paper, you win!!';
   } else if (playerChoice === 'rock' && computerChoice === 'scissors') {
     document.getElementById('result').innerHTML = 'Rock crushes Scissors, you win!!';
+  } else if (playerChoice === 'paper' && computerChoice === 'rock') {
+    document.getElementById('result').innerHTML = 'Paper covers Rock, you win!!';
+  } else {
+    document.getElementById('result').innerHTML = 'Computer wins';
   }
 }
 
