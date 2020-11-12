@@ -5,13 +5,13 @@ function getPlayerChoice() {
       const playerChoice = item.value;
   
       if (item === document.getElementById('rock')) {
-        document.getElementById('choiceDisplay').innerHTML = 'You chose Rock!!';
+        document.getElementById('choiceDisplay').textContent = 'You chose Rock!!';
         return 'rock';
       } else if (item === document.getElementById('paper')) {
-        document.getElementById('choiceDisplay').innerHTML = 'You chose Paper!!';
+        document.getElementById('choiceDisplay').textContent = 'You chose Paper!!';
         return 'paper';
       } else if (item === document.getElementById('scissors')) {
-        document.getElementById('choiceDisplay').innerHTML = 'You chose Scissors!!';
+        document.getElementById('choiceDisplay').textContent = 'You chose Scissors!!';
         'return scissors';
       } else {
         alert('Clicked');
@@ -40,13 +40,13 @@ function getPlayerChoice() {
 function getComputerChoice() {
   const choice = Math.floor(Math.random() * 3);
   if (choice === 0) {
-    document.getElementById('computerChoicedisplay').innerHTML = 'Computer chose Rock!!';
+    document.getElementById('computerChoicedisplay').textContent = 'Computer chose Rock!!';
     return 'rock';
   } else if (choice === 1) {
-    document.getElementById('computerChoicedisplay').innerHTML = 'Computer chose Paper!!';
+    document.getElementById('computerChoicedisplay').textContent = 'Computer chose Paper!!';
     return 'paper';
   } else {
-    document.getElementById('computerChoicedisplay').innerHTML = 'Computer chose Scissors!!';
+    document.getElementById('computerChoicedisplay').textContent = 'Computer chose Scissors!!';
     return 'scissors';
   }
 }
@@ -57,15 +57,15 @@ const playerChoice = getPlayerChoice();
 
 function determineWinner(playerChoice, computerChoice) {
   if (playerChoice === computerChoice) {
-    document.getElementById('result').innerHTML = 'It\'s a tie';
+    document.getElementById('result').textContent = 'It\'s a tie';
   } else if (playerChoice === 'scissors' && computerChoice === 'paper') {
-    document.getElementById('result').innerHTML = 'Scissors cut paper, you win!!';
+    document.getElementById('result').textContent = 'Scissors cut paper, you win!!';
   } else if (playerChoice === 'rock' && computerChoice === 'scissors') {
-    document.getElementById('result').innerHTML = 'Rock crushes Scissors, you win!!';
+    document.getElementById('result').textContent = 'Rock crushes Scissors, you win!!';
   } else if (playerChoice === 'paper' && computerChoice === 'rock') {
-    document.getElementById('result').innerHTML = 'Paper covers Rock, you win!!';
+    document.getElementById('result').textContent = 'Paper covers Rock, you win!!';
   } else {
-    document.getElementById('result').innerHTML = 'Computer wins';
+    document.getElementById('result').textContent = 'Computer wins';
   }
 }
 
