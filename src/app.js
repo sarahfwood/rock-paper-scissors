@@ -69,6 +69,8 @@ function determineWinner(playerChoice, computerChoice) {
   }
 }
 
+console.log(determineWinner());
+
 
 
 function playGame() {
