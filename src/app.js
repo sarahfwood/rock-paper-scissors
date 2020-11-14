@@ -69,7 +69,7 @@ function determineWinner(playerChoice, computerChoice) {
   }
 }
 
-console.log(determineWinner());
+console.log(determineWinner(playerChoice, computerChoice));
 
 
 
