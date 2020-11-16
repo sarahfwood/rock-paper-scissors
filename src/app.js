@@ -51,6 +51,9 @@ function getComputerChoice() {
   }
 }
 
+const computerChoice = getComputerChoice();
+const playerChoice = getPlayerChoice();
+
 function determineWinner(playerChoice, computerChoice) {
   if (playerChoice === computerChoice) {
     document.getElementById('result').textContent = 'It\'s a tie';
@@ -69,12 +72,11 @@ console.log(determineWinner(playerChoice, computerChoice));
 
 
 
-function playGame() {
-  const computerChoice = getComputerChoice();
-  const playerChoice = getPlayerChoice();
-  // const userChoice = playerChoice;
-  // let computerChoice = getComputerChoice();
-}
+// function playGame() {
+
+//   const userChoice = playerChoice;
+//   let computerChoice = getComputerChoice();
+// }
 
 // console.log(determineWinner(playerChoice('scissors'), getComputerChoice()));
 
