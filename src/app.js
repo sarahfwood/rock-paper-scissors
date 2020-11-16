@@ -69,8 +69,7 @@ function determineWinner(playerChoice, computerChoice) {
 }
 
 console.log(determineWinner());
-
-
+debugger
 
 // function playGame() {
 
