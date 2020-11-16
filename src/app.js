@@ -1,9 +1,9 @@
 function getPlayerChoice() {
   document.querySelectorAll('.choice').forEach(item => {
     item.addEventListener('click', event => {
-  
+
       const playerChoice = item.value;
-  
+
       if (item === document.getElementById('rock')) {
         document.getElementById('choiceDisplay').textContent = 'You chose Rock!!';
         return 'rock';
@@ -51,10 +51,6 @@ function getComputerChoice() {
   }
 }
 
-const computerChoice = getComputerChoice();
-const playerChoice = getPlayerChoice();
-
-
 function determineWinner(playerChoice, computerChoice) {
   if (playerChoice === computerChoice) {
     document.getElementById('result').textContent = 'It\'s a tie';
@@ -74,8 +70,10 @@ console.log(determineWinner(playerChoice, computerChoice));
 
 
 function playGame() {
-  const userChoice = playerChoice;
-  let computerChoice = getComputerChoice();
+  const computerChoice = getComputerChoice();
+  const playerChoice = getPlayerChoice();
+  // const userChoice = playerChoice;
+  // let computerChoice = getComputerChoice();
 }
 
 // console.log(determineWinner(playerChoice('scissors'), getComputerChoice()));
