@@ -2,7 +2,7 @@ function getPlayerChoice() {
   document.querySelectorAll('.choice').forEach(item => {
     item.addEventListener('click', event => {
 
-      const playerChoice = item.value;
+      // const playerChoice = item.value;
 
       if (item === document.getElementById('rock')) {
         document.getElementById('choiceDisplay').textContent = 'You chose Rock!!';
@@ -68,7 +68,7 @@ function determineWinner(playerChoice, computerChoice) {
   }
 }
 
-console.log(determineWinner(playerChoice, computerChoice));
+console.log(determineWinner());
 
 
 
